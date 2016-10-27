@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300');
+body {
+	background: url(images/background.jpg) no-repeat center center fixed;
+	background-size: cover;
+	margin:auto;
+	font-family: 'Source Sans Pro', sans-serif !important;
+	font-size: 14pt;
+	line-height: 2;
+	letter-spacing: 0.2em;
+}
+body:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0; right: 0;
+  bottom: 0; left: 0;
+  background-color: rgba(0, 0, 0, .5);
+}
+.mdl-layout__header {
+	background-color: rgba(0,0,0,.3) !important;
+}
+.mdl-layout__tab-bar {
+	background-color: transparent !important;
+}
+.mdl-layout__header-row {
+	display: none !important;
+}
+.mdl-layout__header {
+	min-height: 48px !important;
+}
+.mdl-layout__content {
+	padding: 15px;
+}
+
+/* tab page 1 */
+
+h1 {
+	font-family: 'Source Sans Pro', sans-serif !important;
+	font-weight: 300 !important;
+	text-align: center;
+	color: #fff;
+}
+h4 {
+    text-align: center;
+		font-family: 'Source Sans Pro', sans-serif !important;
+		font-weight: 300 !important;
+    color: rgba(255,255,255,.8);
+}
+h5 {
+    text-align: center;
+		font-family: 'Source Sans Pro', sans-serif !important;
+		font-weight: 300 !important;
+    color: rgba(255,255,255,.5);
+}
+
+
+/* tab page 4 */
+button {
+	font-family: 'Source Sans Pro', sans-serif !important;
+	position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
