@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300');
-
 
 /* Background */
 body {
@@ -43,7 +40,7 @@ body:before {
 	background-color: rgba(0,0,0,.3) !important;
 }
 .mdl-layout__tab {
-	color: rgba(255,255,255,.6) !important;
+	color: rgba(255,255,255,.5) !important;
 }
 .mdl-layout.is-upgraded .mdl-layout__tab.is-active {
   color: #fff !important;
