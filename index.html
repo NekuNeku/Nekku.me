@@ -5,16 +5,15 @@
 	<title>Fading Heart</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.red-deep_orange.min.css" />
-	<script src="material/material.min.js"></script>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="icon" href="images/heart.png">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" rel="stylesheet">
-	<video autoplay loop id="bgvid">
-         <source src="http://dl1.vidding.ru/Video/Full004/04941.BC2013.Lolligerjoj-Into.The.Labyrinth.1080p.amvnews.ru.mp4" type="video/mp4">
-	</video>
 	<meta name="theme-color" content="#ff4081" />
 </head>
-
+<body>
+	<video autoplay loop id="bgvid">
+				 <source src="http://dl1.vidding.ru/Video/Full004/04941.BC2013.Lolligerjoj-Into.The.Labyrinth.1080p.amvnews.ru.mp4" type="video/mp4">
+	</video>
 <!-- Header -->
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header
 mdl-layout--fixed-tabs">
@@ -47,6 +46,7 @@ mdl-layout--fixed-tabs">
 					AniList
 				</button>
 			</a></div>
+			<h5>You can navigate around by using ◄ and ► on your keyboard.</h5>
     </section>
 
 
@@ -106,4 +106,9 @@ mdl-layout--fixed-tabs">
 			</a></div>
     </section>
   </main>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="material/material.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
 </div>

@@ -14,7 +14,7 @@ body:before {
   position: absolute;
   top: 0; right: 0;
   bottom: 0; left: 0;
-  background-color: rgba(0, 0, 0, .6);
+  background-color: rgba(0, 0, 0, .5);
 }
 
 /* desktop */
@@ -77,10 +77,11 @@ ul {
 	font-weight: 300 !important;
 	font-size: 20px !important;
 	color: rgba(255,255,255,.5) !important;
-	padding-top: 15px;
+	padding-top: 22px;
  	margin: auto;
  	text-align: left;
  	max-width: 432px;
+	line-height: 26px !important;
  }
 
 
