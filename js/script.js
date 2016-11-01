@@ -1,3 +1,4 @@
+
 /* ===== Key Movement ===== */
 $(document).keydown(function(e) {
   var key = e.which;
@@ -37,16 +38,18 @@ function toTab(index) {
 /* ===== Key Movement end ===== */
 
 /* ===== Random Background Video ===== */
-$.ajax({
-  url: 'js/halloween.json',
-  dataType: 'JSON',
-  success: function(response) {
-    var videos = response['videos'];
-    var chosenVideo = videos[ Math.floor( Math.random()*videos.length ) ];
-    $('#bgvid source')
-      .attr('src', chosenVideo['src'])
-      .attr('type', chosenVideo['type']);
-    $('#bgvid')[0].load();
-  }
+$(window).on('load', function() {
+  $.ajax({
+    url: 'js/halloween.json',
+    dataType: 'JSON',
+    success: function(response) {
+      var videos = response['videos'];
+      var chosenVideo = videos[ Math.floor( Math.random()*videos.length ) ];
+      $('#bgvid source')
+        .attr('src', chosenVideo['src'])
+        .attr('type', chosenVideo['type']);
+      $('#bgvid')[0].load();
+    }
+  });
 });
 /* ===== Random Background End ===== */
