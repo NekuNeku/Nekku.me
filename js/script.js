@@ -1,3 +1,4 @@
+/* ===== Key Movement ===== */
 $(document).keydown(function(e) {
   var key = e.which;
   if ( key == 37 || key == 39 ) {
@@ -11,20 +12,26 @@ $(document).keydown(function(e) {
 });
 
 function prevTab() {
-  var $prev = toPanel(-1);
+  var $prev = toTab(-1);
 }
 
 function nextTab() {
-  var $next = toPanel(1);
+  var $next = toTab(1);
 }
 
-function toPanel(index) {
+function toTab(index) {
   var currentTabIndex = $('.mdl-layout__tab.is-active').index();
   var $tabs = $('.mdl-layout__tab');
 
   var $tabToActivate = $tabs.eq(currentTabIndex + index);
 
-  if ( (currentTabIndex + index) != -1 && (currentTabIndex + index) != $tabs.length ) {
-    $tabToActivate[0].click();
-  }
+  if ( (currentTabIndex + index) <= -1 ) // we're going backwards from the first, go to last
+    var $tabToActivate = $tabs.eq( ($tabs.length) - 1 );
+  else if ( (currentTabIndex + index) >= $tabs.length ) // we're going forwards from the last, go back to first
+    var $tabToActivate = $tabs.eq(0);
+  else
+    var $tabToActivate = $tabs.eq(currentTabIndex + index); // if we're in the middle, move by the specified amount
+
+  $tabToActivate[0].click();
 }
+/* ===== Key Movement end ===== */
