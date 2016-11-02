@@ -37,7 +37,7 @@ function toTab(index) {
 }
 /* ===== Key Movement end ===== */
 
-/* ===== Random Background Video ===== */
+/* ===== Random Background Video =====
 $(window).on('load', function() {
   $.ajax({
     url: 'js/halloween.json',
@@ -52,4 +52,4 @@ $(window).on('load', function() {
     }
   });
 });
-/* ===== Random Background End ===== */
+ ===== Random Background End ===== */
