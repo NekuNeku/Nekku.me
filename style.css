@@ -103,9 +103,10 @@ ul {
 
 
 /* Buttons */
-a {
+/* a {
   color: transparent !important;
 }
-button {
+*/
+button, a {
 	font-family: 'Source Sans Pro', sans-serif !important;
 }
